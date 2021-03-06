@@ -1,0 +1,4 @@
+<div id='textbar-wrapper'>
+    <input [(ngModel)]="inputText" id="TextBar" (keyup.enter)="commit()" placeholder="What do you want to do today?"/>
+    <div class="button" id="addButton" (click)="commit()">+</div>
+</div>

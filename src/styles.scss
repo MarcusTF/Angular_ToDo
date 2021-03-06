@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+::-webkit-scrollbar {
+    width: 5px;
+    color: transparent;
+    &-thumb{
+      background-color: rgb(204, 204, 204);
+      border-radius: 10px;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  html {
+    height: 100vh;
+  }
+  
+  body{
+    height: 100%;
+    background-color:#F3F3F3;
+    overflow-y: hidden;
+  }

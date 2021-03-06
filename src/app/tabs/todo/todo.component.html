@@ -1,0 +1,11 @@
+<ul class="todosList tab">
+    <!-- <app-list-item class="listItem" *ngFor="let item of list" [id]='item.id' [text]='item.text'
+        [isComplete]='item.isComplete'></app-list-item> -->
+        <li class="listItem" *ngFor="let item of list" id="listItem-{{item.id}}">
+            <span>
+                <input class="checkboxes" type="checkbox" id={{item.id}} (click)="markDone($event)">
+                <p class="listItem-text" style="text-decoration: none;">{{item.text}}</p>
+            </span>
+            <div class="close-btn" id={{item.id}} (click)="removeTodo($event)">+</div>
+        </li>
+</ul>

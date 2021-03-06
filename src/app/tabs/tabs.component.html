@@ -1,0 +1,9 @@
+<div class="tabs-wrapper">
+    <nav>
+        <div [ngClass]="{'inactive-tab': isDone, 'active-tab': isTodo}" [routerLink]="['']" id="todo-tab-btn" (click)="selectTodo()">ToDo</div>
+        <div [ngClass]="{'active-tab': isDone, 'inactive-tab': isTodo}" [routerLink]="['/done']" id="done-tab-btn" (click)="selectDone()">Done</div>
+    </nav>
+    <div class="tab">
+        <router-outlet></router-outlet>
+    </div>
+</div>
