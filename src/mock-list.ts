@@ -3,12 +3,12 @@ import { ListItem } from './types'
 export const List: ListItem[] = [
     {
       id:0,
-      text: "Learn Angular!",
+      text: "Use the input field above to add todo items!",
       isComplete: false
     },
     {
       id:1,
-      text: "Take a nap zZzZz",
+      text: "but with Angular this time!",
       isComplete: true
     },
   ]
