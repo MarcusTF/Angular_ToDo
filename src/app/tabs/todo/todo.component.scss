@@ -1,0 +1,55 @@
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.301);
+    list-style: none;
+    background-color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    span {
+        display: flex;
+        align-items: center;
+        max-width: 95%;
+    }
+    &-text {
+        overflow-wrap: break-word;
+        display: flex;
+        text-align: left;
+        margin-left: 10px;
+    }
+}
+
+.checkboxes {
+    cursor: pointer;
+}
+
+.close-btn {
+    user-select: none;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(143, 0, 0);
+    transform: rotate(45deg);
+    transition: 200ms;
+    &:hover {
+        transition: 200ms;
+        background-color: rgb(228, 3, 3);
+    }
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    max-height: 100%;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.301);
+    overflow-y: scroll;
+}
